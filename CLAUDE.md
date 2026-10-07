@@ -22,7 +22,7 @@ Before pushing, check:
 
 ```sh
 grep -rnE '\b[a-z0-9-]+\.h3\b|osn00|px01|172\.16\.|vcs-user|Phorge|plan/|mission-[0-9]' \
-  --include='*.md' . | grep -v '^\./CLAUDE.md:'
+  --include='*.md' --exclude='CLAUDE.md' .
 ```
 
 It should return nothing.
